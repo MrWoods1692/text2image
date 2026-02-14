@@ -1,0 +1,36 @@
+{
+  "name": "text2image",
+  "version": "1.0.0",
+  "description": "High-performance text to image conversion library",
+  "main": "index.js",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "node test.js"
+  },
+  "gypfile": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/text2image/text2image.git"
+  },
+  "keywords": [
+    "text-to-image",
+    "html-to-image",
+    "css-to-image",
+    "render",
+    "screenshot",
+    "image",
+    "html",
+    "css"
+  ],
+  "author": "Text2Image contributors",
+  "license": "MIT",
+  "dependencies": {
+    "node-addon-api": "^5.0.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}

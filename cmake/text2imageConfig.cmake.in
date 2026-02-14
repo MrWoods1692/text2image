@@ -1,0 +1,15 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# Find dependencies
+find_dependency(Skia REQUIRED)
+find_dependency(LibXml2 REQUIRED)
+find_dependency(Freetype REQUIRED)
+find_dependency(VIPS REQUIRED)
+
+# Include targets
+include("${CMAKE_CURRENT_LIST_DIR}/text2imageTargets.cmake")
+
+# Check version compatibility
+check_required_components(text2image)
